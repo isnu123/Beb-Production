@@ -1,0 +1,268 @@
+/* 
+   UTS - Personal Portfolio "Beb Production"
+   Custom Stylesheet - Modern Dark Theme (Clean & Organized)
+*/
+
+/* =========================================
+   1. GLOBAL VARIABLES & BASE STYLES
+   ========================================= */
+:root {
+  --primary-red: #e60000;
+  --dark-bg: #0b0b0b;
+  --dark-card: rgba(26, 26, 26, 0.8);
+  --light-text: #f8f9fa;
+  --gray-text: #a0a0a0;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  margin: 0;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--primary-red);
+  color: white;
+}
+
+/* =========================================
+   2. NAVBAR & BRANDING (Final Perfectly Synced)
+   ========================================= */
+.navbar {
+  background-color: rgba(11, 11, 11, 0.95) !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 2px solid var(--primary-red);
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  /* KUNCI: Durasi dan timing sama untuk semua elemen */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Base Style Logo & Teks (Menggunakan inherit agar bareng) */
+.navbar-brand img,
+.navbar-brand span {
+  transition: inherit; 
+  display: inline-block;
+  text-shadow: none !important;
+}
+
+.navbar-brand img {
+  border-radius: 8px;
+}
+
+.navbar-brand .text-white { color: #ffffff !important; }
+.navbar-brand .text-danger { color: var(--primary-red) !important; }
+
+/* HOVER: Efek Gerakan Kompak */
+.navbar-brand:hover {
+  transform: translateY(-5px); /* Container utama naik */
+}
+
+.navbar-brand:hover img {
+  /* Rotasi dikurangi agar tidak terlalu miring, scale tetap agar tegas */
+  transform: rotate(5deg) scale(1.1); 
+  filter: drop-shadow(0 0 8px rgba(230, 0, 0, 0.3));
+}
+
+/* Memastikan teks tetap bersih tanpa shadow saat hover */
+.navbar-brand:hover span {
+  text-shadow: none !important;
+  transform: scale(1.02); /* Sedikit membesar mengikuti logo */
+}
+
+/* =========================================
+   3. SHARED COMPONENTS (Cards & Backgrounds)
+   ========================================= */
+/* Wrapper Dasar untuk Background Image */
+.services-bg-wrapper, .contact-bg-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+/* Service Card Style (Digunakan di Services & USP About) */
+.service-card {
+  background: var(--dark-card) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 40px;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  background: rgba(34, 34, 34, 0.9) !important;
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 15px 30px rgba(230, 0, 0, 0.2);
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: var(--primary-red);
+  margin-bottom: 20px;
+}
+
+.service-card ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  color: var(--gray-text);
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.service-card ul li { margin-bottom: 8px; }
+
+/* =========================================
+   4. ABOUT PAGE SPECIFIC
+   ========================================= */
+.about-img-container {
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-image-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.about-image-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--primary-red);
+}
+
+.about-image-card img {
+  border-radius: 12px;
+  display: block;
+}
+
+/* =========================================
+   5. SERVICES PAGE SPECIFIC
+   ========================================= */
+.services-bg-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                    url('../images/bg2.jpeg');
+  background-position: center 60%;
+}
+
+/* =========================================
+   6. CONTACT PAGE SPECIFIC
+   ========================================= */
+.contact-bg-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+                    url('../images/contact-bg.jpeg');
+}
+
+.contact-container {
+  background: rgba(22, 22, 22, 0.7) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* =========================================
+   7. FOOTER, MAP, & ANIMATIONS
+   ========================================= */
+footer {
+  background-color: #050505;
+  padding: 70px 0 30px;
+  border-top: 1px solid #222;
+}
+
+.footer-link {
+  color: var(--gray-text) !important;
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: var(--primary-red) !important;
+  transform: scale(1.1) translateX(8px);
+}
+
+.footer-link.active-page {
+  color: var(--primary-red) !important;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.map-container {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.map-container iframe {
+  filter: grayscale(100%) invert(90%) contrast(90%);
+  transition: var(--transition);
+}
+
+.map-container:hover iframe {
+  filter: grayscale(0%) invert(0%);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* =========================================
+   8. RESPONSIVE DESIGN (Media Queries)
+   ========================================= */
+@media (max-width: 768px) {
+  .services-bg-wrapper, .contact-bg-wrapper {
+    background-attachment: scroll; /* Parallax dimatikan di HP agar lancar */
+    padding: 60px 0;
+  }
+  
+  .about-img-container {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Beb Production</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo jpg.jpg">
+  
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Hero Section with Parallax Background */
+    .about-hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
+                  url('images/about us.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .section-padding { padding: 80px 0; }
+    
+    /* Visi Misi Cards */
+    .vision-mission-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      height: 100%;
+      transition: 0.3s;
+    }
+    .vision-mission-card:hover {
+      border-color: #e60000;
+      background: rgba(230, 0, 0, 0.05);
+    }
+
+    /* Selling Point Icons */
+    .feature-icon {
+      font-size: 2.5rem;
+      color: #e60000;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .cta-section {
+      background: linear-gradient(45deg, #000, #1a1a1a);
+      border-radius: 30px;
+      padding: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero { background-attachment: scroll; }
+      .cta-section { padding: 30px; }
+    }
+  </style>
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark border-bottom border-danger">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo jpg.jpg" alt="Logo" width="40" height="40" class="me-2 rounded" />
+        <span class="fw-bold">Beb <span class="text-danger">Production</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active text-danger" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Story -->
+  <header class="about-hero">
+    <div class="container text-center">
+      <h6 class="text-danger fw-bold text-uppercase ls-2 mb-3">Who We Are</h6>
+      <h1 class="display-3 fw-bold mb-4">Our <span class="text-danger">Story</span></h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="lead mb-4 fw-bold">Beb Production adalah entitas kreatif yang berfokus pada layanan live streaming dan produksi video profesional.</p>
+          <p class="text-white-50">Berdiri sejak 2024 di Wonogiri, kami hadir untuk menghadirkan kualitas visual terbaik dan pengalaman profesional bagi setiap klien terpercaya kami.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Visi & Misi Section -->
+  <section class="section-padding bg-black">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="vision-mission-card">
+            <h3 class="text-danger fw-bold mb-3">Visi</h3>
+            <p>Menjadi mitra kreatif terdepan yang mendobrak batas visual dan teknologi streaming untuk menghubungkan audiens di mana pun mereka berada.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="vision-mission-card">
+            <h3 class="text-danger fw-bold mb-3">Misi</h3>
+            <p>Memberikan solusi produksi video yang inovatif, menjaga kualitas teknis standar penyiaran, dan memastikan setiap momen berharga tersampaikan dengan sempurna secara real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selling Points -->
+  <section class="section-padding">
+    <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-5">Mengapa Memilih <span class="text-danger">Kami?</span></h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <i class="bi bi-stars feature-icon"></i>
+          <h5>Kualitas Visual Premium</h5>
+          <p class="small text-white-50">Menggunakan perangkat standar profesional untuk hasil tajam, jernih, dan sinematik.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-lightning-charge feature-icon"></i>
+          <h5>Teknologi Stabil</h5>
+          <p class="small text-white-50">Sistem koneksi redundan menjamin kelancaran siaran langsung tanpa kendala teknis.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-people feature-icon"></i>
+          <h5>Tim Berpengalaman</h5>
+          <p class="small text-white-50">Didukung videografer, editor, dan teknisi streaming ahli di bidangnya.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-gear feature-icon"></i>
+          <h5>Solusi Terpersonalisasi</h5>
+          <p class="small text-white-50">Pendekatan teknis dan kreatif yang disesuaikan dengan kebutuhan spesifik Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="cta-section text-center border border-secondary">
+        <h2 class="fw-bold mb-4">Mari jadikan acara dan ide Anda sebagai sebuah mahakarya visual.</h2>
+        <p class="lead mb-5 text-white-50">Beb Production bukan sekadar penyedia jasa, melainkan mitra sukses perjalanan kreatif Anda.</p>
+        <a href="contact.html" class="btn btn-danger btn-lg px-5 py-3 rounded-pill fw-bold">Konsultasikan Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-5 border-top border-secondary">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="text-danger mb-4 fw-bold">QUICK LINKS</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="footer-link active-page">About</a></li>
+            <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+            <li class="mb-2"><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-danger mb-4 fw-bold">ADDRESS INFO</h5>
+          <p class="text-white-50 small">
+            <strong>Beb Production Office</strong><br>
+            Karanganyar, Karangtengah, Kab. Wonogiri,<br>
+            Jawa Tengah, Indonesia
+          </p>
+        </div>
+        <div class="col-md-4">
+      <div class="rounded overflow-hidden border border-secondary shadow-sm">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.9257148713152!2d111.09631579596866!3d-8.018371131059089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e797d005f47a5b7%3A0x1bdde690bde7a354!2sBEB%20PRODUCTION%20SHOOTING%20BALAP!5e0!3m2!1sid!2sid!4v1777788148925!5m2!1sid!2sid"
+          width="100%" 
+          height="150" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+        </div>
+      </div>
+      <hr class="mt-5 border-secondary opacity-25">
+      <p class="text-center mb-0 small text-white-50">© 2026 Beb Production. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

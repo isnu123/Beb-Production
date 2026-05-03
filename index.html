@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beb Production | Creative Video & Streaming</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo jpg.jpg">
+  
+  <!-- Bootstrap, Icons & Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Path CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Tambahan style khusus untuk mempercantik Home */
+    .hero-section {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/services.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    
+    .feature-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+    
+    .feature-card:hover {
+      border-color: #dc3545;
+      transform: translateY(-10px);
+    }
+
+    .client-list span {
+      opacity: 0.6;
+      transition: 0.3s;
+      cursor: default;
+    }
+
+    .client-list span:hover {
+      opacity: 1;
+      color: #dc3545;
+    }
+  </style>
+</head>
+<body class="bg-dark text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark border-bottom border-danger">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo jpg.jpg" alt="Logo" width="40" height="40" class="me-2 rounded shadow-sm" />
+        <span class="fw-bold">Beb <span class="text-danger">Production</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active text-danger" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center shadow-lg">
+    <div class="container">
+      <h6 class="text-danger fw-bold text-uppercase mb-3" style="letter-spacing: 3px;">Profesional & Inovatif</h6>
+      <h1 class="display-3 fw-bold text-uppercase mb-3">Creative <span class="text-danger">Video</span> Production</h1>
+      <p class="lead mb-5 px-lg-5">Mendobrak batas visual dan teknologi streaming untuk menghubungkan setiap momen berharga Anda dengan kualitas standar penyiaran terbaik.</p>
+      <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+        <a href="services.html" class="btn btn-danger btn-lg px-5 py-3 rounded-pill fw-bold shadow">Lihat Layanan</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-bold">Konsultasi Gratis</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Welcome & Vision Section -->
+  <main class="py-5">
+    <div class="container py-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h6 class="text-danger fw-bold text-uppercase mb-2">Selamat Datang</h6>
+          <h2 class="display-5 fw-bold mb-4">Solusi Visual <span class="text-danger">Terdepan</span></h2>
+          <p class="lead text-secondary italic mb-4">"Menjadi mitra kreatif yang memastikan setiap momen berharga tersampaikan dengan sempurna secara real-time."</p>
+          <p class="text-white-50">Beb Production bukan sekadar penyedia jasa shooting. Kami adalah mitra sukses perjalanan kreatif Anda yang berbasis di Wonogiri, berfokus pada teknologi live streaming terkini dan produksi video yang menjaga standar kualitas tinggi untuk audiens di mana pun mereka berada.</p>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="feature-card p-5 rounded-4 shadow">
+            <h4 class="text-danger mb-4 fw-bold"><i class="bi bi-shield-check me-2"></i>Mengapa Beb Production?</h4>
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <h6 class="fw-bold"><i class="bi bi-camera-reels text-danger me-2"></i>Visual Premium</h6>
+                <p class="small text-white-50">Perangkat standar profesional untuk hasil sinematik.</p>
+              </div>
+              <div class="col-sm-6">
+                <h6 class="fw-bold"><i class="bi bi-broadcast text-danger me-2"></i>Streaming Stabil</h6>
+                <p class="small text-white-50">Koneksi aman untuk siaran langsung tanpa kendala.</p>
+              </div>
+              <div class="col-sm-6">
+                <h6 class="fw-bold"><i class="bi bi-people text-danger me-2"></i>Tim Ahli</h6>
+                <p class="small text-white-50">Didukung videografer dan teknisi berpengalaman.</p>
+              </div>
+              <div class="col-sm-6">
+                <h6 class="fw-bold"><i class="bi bi-cpu text-danger me-2"></i>Efisien</h6>
+                <p class="small text-white-50">Teknologi modern untuk proses produksi yang cepat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Trust Bar -->
+      <div class="mt-5 pt-5 text-center">
+        <h6 class="text-uppercase mb-4 opacity-50 fw-bold" style="letter-spacing: 2px;">Klien Terpercaya Kami</h6>
+        <div class="client-list d-flex flex-wrap justify-content-center gap-4 fw-bold fs-5">
+          <span>Sangkara Music</span>
+          <span class="d-none d-sm-inline">|</span>
+          <span>Menuju Resmi</span>
+          <span class="d-none d-sm-inline">|</span>
+          <span>Mukti Laras</span>
+          <span class="d-none d-sm-inline">|</span>
+          <span>Arum Puspita</span>
+          <span class="d-none d-sm-inline">|</span>
+          <span>Hanggono Laras</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-black py-5 border-top border-secondary">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="text-danger mb-4 fw-bold">QUICK LINKS</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="footer-link active-page">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="footer-link">About</a></li>
+            <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+            <li class="mb-2"><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-danger mb-4 fw-bold">ADDRESS INFO</h5>
+          <p class="text-white-50 small">
+            <strong>Beb Production Office</strong><br>
+            Karanganyar, Karangtengah, Kab. Wonogiri,<br>
+            Jawa Tengah, Indonesia
+          </p>
+        </div>
+        <div class="col-md-4">
+      <div class="rounded overflow-hidden border border-secondary shadow-sm">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.9257148713152!2d111.09631579596866!3d-8.018371131059089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e797d005f47a5b7%3A0x1bdde690bde7a354!2sBEB%20PRODUCTION%20SHOOTING%20BALAP!5e0!3m2!1sid!2sid!4v1777788148925!5m2!1sid!2sid"
+          width="100%" 
+          height="150" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+        </div>
+      </div>
+      <hr class="mt-5 border-secondary opacity-25">
+      <p class="text-center mb-0 small text-white-50">© 2026 Beb Production. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Path script disesuaikan -->
+  <script src="js/script.js"></script>
+</body>
+</html>
