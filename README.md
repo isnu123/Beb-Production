@@ -27,19 +27,20 @@ Proyek ini adalah Website Portofolio Bisnis resmi untuk **Beb Production**, sebu
 ```text
 BEB PRODUCTION/
 ├── css/
-│   └── style.css      # Semua gaya kustom dan animasi
+│   └── style.css          # Semua gaya kustom dan animasi
 ├── images/
-│   ├── logo jpg.jpg   # Identitas brand
-│   ├── about us.jpeg  # Aset visual latar belakang
-│   ├── services.jpeg  # Visualisasi layanan
-│   └── favicon.png    # Ikon tab browser
+│   ├── about us.jpeg      # Aset visual halaman About
+│   ├── bg2.jpeg           # Aset background sekunder
+│   ├── contact-bg.jpeg    # Background khusus halaman kontak
+│   ├── logo jpg.jpg       # Identitas brand utama
+│   └── services.jpeg      # Visualisasi halaman layanan
 ├── js/
-│   └── script.js      # Logika interaksi dan scroll
-├── index.html         # Halaman Utama
-├── about.html         # Halaman Profil Perusahaan
-├── services.html      # Halaman Detail Layanan
-├── contact.html       # Halaman Informasi Kontak
-└── README.md          # Dokumentasi proyek
+│   └── script.js          # Logika interaksi dan scroll
+├── about.html             # Halaman Profil Perusahaan
+├── contact.html           # Halaman Informasi Kontak
+├── index.html             # Halaman Utama (Beranda)
+├── README.md              # Dokumentasi proyek
+└── services.html          # Halaman Detail Layanan
 📍 Alamat Operasional
 Beb Production Office
 
